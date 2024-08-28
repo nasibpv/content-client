@@ -12,7 +12,7 @@ function Index() {
             password:pwd
           }
           console.log(body);
-          const { data } = await axios.post('http://localhost:8000/loginForm',body)
+          const { data } = await axios.post('https://content-client.vercel.app/loginForm',body)
           console.log(data);
           if(data.status){
             alert(data.message)
